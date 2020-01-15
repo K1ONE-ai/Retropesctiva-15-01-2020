@@ -18,15 +18,20 @@ public class ListaFuncionario01<li> {
         int contador = 0;
         for (String nomes : listaDeFuncionarios) {
             contador++;
-            System.out.println("Lista De Funcionarios: " + nomes);
+            System.out.println(contador + ": " + nomes);
         }
         System.out.println("Você deseja remover alguém da lista");
         String nome = ler.nextLine();
 
+        listaDeFuncionarios.remove(nome);
 
-        System.out.println("Lista atualizada: " + listaDeFuncionarios.remove());
-
+        int contado = 0;
+        for (String nomes : listaDeFuncionarios) {
+            contado++;
+            System.out.println(contado + ": " + nomes);
         }
     }
+
+}
 
 
